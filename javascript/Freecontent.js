@@ -1,7 +1,7 @@
 let Slider = async ()=>{
     let slider = ""
     try {
-        let data = await fetch("https://aliahanin.github.io/github.api/json/Freecontent.jsont")
+        let data = await fetch("https://aliahanin.github.io/github.api/json/Freecontent.json")
         let res = await data.json();
         slider = res.map((item) =>{
             return` <div class="swiper-slide  mt-5 rounded-xl relative  ">
