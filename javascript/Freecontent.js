@@ -21,4 +21,30 @@ let Slider = async ()=>{
          console.log(error.message);
     }
 }
-Slider()
+async function executeSlider(){
+    var swiper = new Swiper(".myFree", {
+        
+        slidesPerView: 2.5,
+        spaceBetween: 15,
+          navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            
+            breakpoints: {
+              1024:{
+                slidesPerView:6,
+                spaceBetween:15,
+              },
+              375:{
+                slidesPerView: 2.5,
+                spaceBetween: 15,
+              }
+            }
+        });
+}
+async function slideComponents(){
+    await Slider();
+    await executeSlider();
+}
+slideComponents();
