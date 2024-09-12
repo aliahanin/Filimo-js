@@ -3,9 +3,9 @@
 @tailwind utilities;
 @font-face {
     font-family: IRANsans;
-    src: url("./font/IRANSans-web.eot");
-    src: url("./font/IRANSans-web.ttf");
-    src: url("./font/IRANSans-web.woff");
+    src: url("/font/IRANSans-web.eot");
+    src: url("/font/IRANSans-web.ttf");
+    src: url("/font/IRANSans-web.woff");
   }
   @layer components{
     *{
